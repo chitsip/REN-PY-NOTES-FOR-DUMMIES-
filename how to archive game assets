@@ -1,6 +1,17 @@
-## How to archive game files / assets
+How to archive game files / assets
 
-### So you're finally done with your Ren'py game and are looking at the Build Distribution screen. In order to lock / hide game files once you distribute the game, you have to follow these steps.
+# So you're finally done with your Ren'py game and are looking at the Build Distribution screen. 
+# In order to lock / hide game files once you distribute the game, you have to follow these steps.
 
-## 1. ### Head into options.rpy
-## 2. ### Eat ass
+1. Go into options.rpy
+2. Find this string on options
+
+## To archive files, classify them as 'archive'.
+    # build.classify('game/**.png', 'archive')
+    # build.classify('game/**.jpg', 'archive')
+
+# Before we edit under, we must understand what 'build.archive' & 'build.classify' does
+
+# 'build.archive' = makes a file for all game assets named to be compressed into.
+# 'build.classify' = puts the game assets into the archive file
+
