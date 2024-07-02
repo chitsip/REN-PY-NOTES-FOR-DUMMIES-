@@ -1,3 +1,53 @@
+
+
+# Panning your camera in Ren'py !
+# For some reason, this isn't shown in Ren'py docs but is by far the best method I've seen
+
+____________________________________________________________________________________________________
+
+# This is an example and I will explain to you what each part does, so don't fret.
+
+show image with fade:
+    zoom 2 align (0.1, 0.4) subpixel True
+    easein 2.5 align (0.1, 0.2)
+
+# 'zoom 2' zooms in to the image shown
+
+# 'align (0.1, 0.4)' = tells the camera where to START using the x and y axis
+
+# 'subpixel True' = subpixel is a transform property, so you must include this for it to be an panning animation
+
+# 'easein 2.5' = is another transform, that eases into the camera coordinates
+
+# 'align (0.1, 0.2)' = tells the camera where to STOP using the x and y axis
+
+____________________________________________________________________________________________________
+
+If error rolls:
+Check if you have the colon ':' after showing the image
+Check the indentations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 show image with fade:
     zoom 2 align (0.1, 0.4) subpixel True
     easein 2.5 align (0.1, 0.2)
