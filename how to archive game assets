@@ -11,10 +11,15 @@ PART 1: IMAGES
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
 
-# Before we edit under, we must understand what 'build.archive' & 'build.classify' does
+# Before we create a new line under and edeit, we must understand what 'build.archive' & 'build.classify' does
 
 # 'build.archive' = makes a file for all game assets named to be compressed into.
-# 'build.classify' = puts the game assets into the archive file
+# 'build.classify' = defines file path for the game assets to be put into
+
+# You are essentially creating a box with build.archive & putting game assets inside that box using build.classify 
+
+
+
 
 For example, we want to archive images. What we do is create an archive file.
 
@@ -25,5 +30,41 @@ Then, we create a path by
     build.classify("game/images/**.png", "images")
 
 # What '**' does is any file that in png format, regardless of it's name will be archived.
+
+IF ALL IMAGES ARE NOT BEING HIDDEN, THEY ARE IN A DIFFERENT FORMAT
+Make sure to make changes based on your game asset's format
+For example:
+    build.archive("images", "all")
+    build.classify("game/images/bg/**.jpg", "images")
+
+
+##########################################################################################
+
+# Here is how I organized my build.classify & build.archive strings
+
+    build.archive("images", "all")
+    build.archive("scripts", "all")
+    build.archive("audio", "all")
+
+
+    build.classify("game/images/**.png", "images")
+    build.classify("game/images/**/**.png", "images")
+    build.classify("game/gui/**.png", "images")
+
+    
+    build.classify("game/fonts/**.png", "fonts")
+
+
+    build.classify("game/images/bg/**.jpg", "images")
+    build.classify("game/images/cg/**.png", "images")
+    build.classify("game/images/cg/**.jpg", "images")
+
+
+    build.classify("game/audio/**.mp3", "audio")
+
+
+    build.classify("game/**.rpy", "scripts")
+    build.classify("game/**.rpyc", "scripts")
+
     
 
