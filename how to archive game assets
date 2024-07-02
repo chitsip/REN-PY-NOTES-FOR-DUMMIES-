@@ -18,7 +18,7 @@ How to archive game files / assets in Ren'py !
 
 # You are essentially creating a box with build.archive & putting game assets inside that box using build.classify 
 
-
+____________________________________________________________________________________________________
 
 
 For example, we want to archive images. What we do is create an archive file.
@@ -37,8 +37,17 @@ For example:
     build.archive("images", "all")
     build.classify("game/images/bg/**.jpg", "images")
 
+Once the game is built and you go into the game folder, the build.archive will be files that build.classify declared paths for
+they will be .rpa files
+Keep in mind that Ren'py's game asset archive is not the securest
+It's easy to extract using a tool like : https://github.com/CensoredUsername/unrpyc/releases
 
-##########################################################################################
+
+
+____________________________________________________________________________________________________
+
+
+
 
 # Here is how I organized my build.classify & build.archive strings
 
@@ -65,6 +74,11 @@ For example:
 
     build.classify("game/**.rpy", "scripts")
     build.classify("game/**.rpyc", "scripts")
+
+
+
+
+____________________________________________________________________________________________________
 
     
 
