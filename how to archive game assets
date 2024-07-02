@@ -4,7 +4,7 @@ How to archive game files / assets
 # In order to lock / hide game files once you distribute the game, you have to follow these steps.
 
 1. Go into options.rpy
-2. Find this string on options
+2. Find this string in options
 
 ## To archive files, classify them as 'archive'.
     # build.classify('game/**.png', 'archive')
@@ -14,4 +14,15 @@ How to archive game files / assets
 
 # 'build.archive' = makes a file for all game assets named to be compressed into.
 # 'build.classify' = puts the game assets into the archive file
+
+For example, we want to archive images. What we do is create an archive file.
+
+    build.archive("images", "all")
+
+Then, we create a path by
+
+    build.classify("game/images/**.png", "images")
+
+# What '**' does is any file that in png format, regardless of it's name will be archived.
+    
 
