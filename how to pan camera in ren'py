@@ -1,1 +1,7 @@
-poop
+show image with fade:
+    zoom 2 align (0.1, 0.4) subpixel True
+    easein 2.5 align (0.1, 0.2)
+# image pan
+# align = image placement
+# first align string = first placement, second string = ending placement
+# subpixel is a Transform Properties of ATL, so it must be set for each animation
