@@ -1,2 +1,50 @@
+# Placing your Ren'Py game icons!
+____________________________________________________________________________________________________
+
+FIRST You are going to need TWO versions of your icon
+# Before we get started, you need to know why we need TWO icons!
+
+icon.ico = shows the icon during the game
+'window_icon.png' = shows the icon in the taskbar
+
+____________________________________________________________________________________________________
+
+# Now, here's what we need
+
+1. a png icon (256x256)
+2. a duplicated png icon that you must convert using a website to '.png' to '.ico'
+
+# Make sure that BOTH of your icon dimensions are 256x256
+# Make sure that you named the '.ico' icon to 'icon.ico'
+# For example if your icon was named 'poop' rename it to 'icon.ico'
+
+____________________________________________________________________________________________________
+
+# Time to place the icons !
+
+  1. Put 'icon.ico' into BASE folder. (Just drop it in there, it's fine lol)
+  2. Rename your png icon to 'window_icon.png' in gui folder (you're replacing the default Ren'py icon!)
+
+____________________________________________________________________________________________________
+
+slay you ate it up let's goo!!
+7/2/2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 convert png to ico 256x256, put in base folder, name it icon
 taskbar icon replace windows_icon in gui
