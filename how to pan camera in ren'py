@@ -13,7 +13,7 @@ show image with fade:
 
 # 'align (0.1, 0.4)' = tells the camera where to START using the x and y axis
 
-# 'subpixel True' = subpixel is a transform property, so you must include this for it to be an panning animation
+# 'subpixel True' = subpixel is a transform property, so you must include this for it to be a panning animation
 
 # 'easein 2.5' = is another transform, that eases into the camera coordinates
 
