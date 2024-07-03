@@ -7,11 +7,11 @@ How to archive game files / assets in Ren'py !
 1. Go into options.rpy
 2. Find this string in options
 
-## To archive files, classify them as 'archive'.
+# To archive files, classify them as 'archive'.
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
 
-# Before we create a new line under and edeit, we must understand what 'build.archive' & 'build.classify' does
+# Before we create a new line under and edit, we must understand what 'build.archive' & 'build.classify' does
 
 # 'build.archive' = makes a file for all game assets named to be compressed into.
 # 'build.classify' = defines file path for the game assets to be put into
