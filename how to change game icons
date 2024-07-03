@@ -4,7 +4,7 @@ ________________________________________________________________________________
 FIRST You are going to need TWO versions of your icon
 # Before we get started, you need to know why we need TWO icons!
 
-icon.ico = shows the icon during the game
+'icon.ico' = shows the icon during the game
 'window_icon.png' = shows the icon in the taskbar
 
 ____________________________________________________________________________________________________
